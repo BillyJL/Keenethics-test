@@ -1,0 +1,93 @@
+.card {
+    position: relative;
+    padding: 15px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.id {
+    font-size: 12px;
+    color: #717171;
+}
+
+.price {
+    font-size: 24px;
+    text-align: end;
+    text-transform: none;
+    margin-bottom: -5px;
+}
+
+.lastRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.statusDropdown {
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+}
+
+.statusDropdown::after {
+    content: "";
+    position: absolute;
+    top: 48%;
+    right: -15px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    transition: transform 0.2s ease;
+}
+
+.statusContainer {
+    position: relative;
+    text-transform: capitalize;
+}
+
+.dropdownContent {
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    right: -20px;
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.statusDropdown.open + .dropdownContent {
+    display: flex;
+}
+
+.dropdownContent div {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.available {
+    border: 2px solid green;
+}
+
+.busy {
+    border: 2px solid yellow;
+}
+
+.unavailable {
+    border: 2px solid red;
+    opacity: 0.7;
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira&family=Saira+Stencil+One&family=Source+Code+Pro:ital@1&display=swap');
+
+.footer {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #696969;
+    text-align: end;
+}
+
+.developer {
+    font-family: "Saira";
+    font-size: 20px;
+    font-weight: 400;
+    color: #cbcaca;
+}
+
+.name {
+    font-family: "Saira";
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
